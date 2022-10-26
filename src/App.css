@@ -1,0 +1,107 @@
+
+
+body{
+  margin:0; 
+  padding:0; 
+  overflow: hidden;
+  font-family: 'Fuzzy Bubbles', cursive;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.video{
+  z-index: -1;
+  width: 100vw;
+  position: fixed;
+  height: auto;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App{
+  margin: 50px;
+  width: 500px;
+  padding: 40px;
+  background-color: rgba(4, 4, 4, 0.759);
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #a23661;
+}
+
+h2{
+  color: rgb(186, 128, 158);
+  text-align: center;
+  font-size: 15px;
+}
+h1{
+  text-transform: uppercase;
+  color: #a23661;
+  text-shadow: 1px 2px 2px, -1px -2px 3px #282d2e;
+  text-align: center;
+  height: 80px;
+  font-size: 17px;
+}
+
+.btn{
+  font-family: 'Fuzzy Bubbles', cursive;
+  margin: 50px;
+  padding: 10px;
+  width: 150px;
+  background-color: black;
+  color: #a23661;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #c1356f;
+}
+.btn:hover{
+  background-color: #c1356f;
+  color: rgb(15, 11, 11);
+}
+
+.giff{
+  margin-top: 20px;
+  width: 150px;
+  border-radius: 100px;
+  border: 3px solid #c1356f;
+}
+ 
+@media all and (max-width: 800px) {
+  .video{
+    height: 140vh;
+    width:inherit
+  }
+
+  .App{
+    margin: 50px;
+    width: 400px;
+}
+}
+
+@media all and (max-width: 500px) {
+
+body{
+  overflow: auto;
+}
+
+  .video{
+    height: 140vh;
+    width:inherit
+  }
+
+  .App{
+    margin: 40px 20px 10px 20px;
+    width: 300px;
+    padding: 30px 10px 40px 10px;
+}
+
+
+}
